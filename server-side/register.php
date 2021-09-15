@@ -1,4 +1,19 @@
 <?php
+/*
+UNE - Tri 2 - COSC260 - A3
+Author: Benjamin Nolan
+File: register.php
+Description:
+    *Takes POST data
+    *Validates in PHP.
+    *If Validation fails, http response headers sent with 400 error
+    and custom message in console and client.
+    *If succeeds, json serialization of POST data as a database object then written to json file
+    as a list of users that passed validation, then returns randomly generated user_id
+    and outputs to client.
+Date last modified: Sep 15 2021
+*/
+
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 

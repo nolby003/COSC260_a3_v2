@@ -1,5 +1,13 @@
 <?php
-// create user to database in json format
+/*
+UNE - Tri 2 - COSC260 - A3
+Author: Benjamin Nolan
+File: Database.php
+Description:
+    *Json serialization of POST data as a database object prepped
+    to be written to json file.
+Date last modified: Sep 15 2021
+*/
 class Users implements JsonSerializable {
 
     private $uid;
